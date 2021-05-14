@@ -14,7 +14,7 @@ app.get('*', ((request, response) => {
     response.sendFile(path.join(__dirname, './Frontend/build'));
 }))
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 8080;
 app.listen(port,  () => {
     console.log(`Server started on port ${port}`);
 })

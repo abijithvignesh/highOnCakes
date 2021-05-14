@@ -14,7 +14,7 @@
     "client-dev": "cd ./Frontend && npm start",
     "move-client": "move ./Frontend/build ./static",
     "client-build": "cd ./Frontend && npm install && npm run build",
-    "build": "npm run client-build && npm run move-client",
+    "build": "npm run client-build",
     "heroku-postbuild": "npm run build"
   },
   "name": "hocmern",

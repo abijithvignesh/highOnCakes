@@ -9,9 +9,9 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //Routes
-app.use(express.static(path.join(__dirname, '../Frontend/build')));
+app.use(express.static(path.join(__dirname, './Frontend/build')));
 app.get('*', ((request, response) => {
-    response.sendFile(path.join(__dirname, '../Frontend/build'));
+    response.sendFile(path.join(__dirname, './Frontend/build'));
 }))
 
 const port = process.env.port || 5000;

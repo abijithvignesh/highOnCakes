@@ -14,18 +14,26 @@ export const Nav = styled.nav`
 `;
 
 export const LeftNav = styled.div`
+   @media (min-width: 1024px) {
+      margin-left: 4rem;
+    }
   a {
     text-decoration: none;
     font-weight: 600;
     color: #f36583;
     font-size: ${(props) => (props.show ? "0px" : "20px")};
     cursor: pointer;
+    @media (min-width: 1024px) {
+      font-size: 25px;
+    }
   }
 `;
 
 export const RightNav = styled.div`
   display: flex;
- 
+  @media (min-width: 1024px) {
+      margin-right: 4rem;
+    }
   img {
     @media (min-width: 768px) {
       display: none;
@@ -37,6 +45,10 @@ export const RightNav = styled.div`
     display: none;
     @media (min-width: 768px) {
       display: inline;
+      font-size: 15px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 17px;
     }
     list-style-type: none;
     margin: 0;
@@ -47,7 +59,7 @@ export const RightNav = styled.div`
   }
   li {
     display: inline;
-    margin-left: 1rem;
+    margin-left: 1.2rem;
     a {
       padding: 8px;
       color: #f36583;

@@ -27,8 +27,8 @@ export default function Hero() {
       <Section>
         <Container>
           <LeftContainer>
-            <Title1>HOMEBAKING<br/> HAS NEVER TASTED <br/>SO <span>GOOD</span></Title1>
-            <Title2>Cakes for every occassion from High On Cakes</Title2>
+            <Title1>HOMEBAKING<br/> HAS NEVER TASTED <br/>SO <span>GOOD.</span></Title1>
+            <Title2>Cakes for every occassion from <br/> High On Cakes</Title2>
             <ButtonGroup>
               <Button primary>Order Now</Button>
               <Button>Know More</Button>

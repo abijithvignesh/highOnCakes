@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import hamburger from "../../images/hamburger.svg";
 import {
   Nav,
@@ -16,9 +16,21 @@ export default function Navigation() {
     setHamMenuState(prevState=>!prevState);
   };
 
+  const[offsetY, setOffSetY] = useState(0);
+
+  const handleScroll = () => setOffSetY(window.pageYOffset);
+
+  useEffect(()=>{
+    window.addEventListener('scroll',handleScroll)
+
+    return () => window.removeEventListener("scroll",handleScroll);
+  },[])
+
+  
+
   return (
-    <Wrapper>
-      <Nav>
+    <Wrapper offsetY={offsetY}>
+      <Nav offsetY={offsetY}>
         <LeftNav show={hamMenuState}>
           <a href="home">HIGH ON CAKES</a>
         </LeftNav>

@@ -32,8 +32,8 @@ export default function CarouselSection() {
       <Wrapper>
         <Container>
           <Carousel itemsToShow={window.innerWidth > 768 ? 2 : 1} renderArrow={myArrow}>
-            <SliderImage src={cake1} height="" alt="cake1"></SliderImage>
-            <SliderImage src={cake2} height="" alt="cake2"></SliderImage>
+            <SliderImage src={cake1} alt="cake1"></SliderImage>
+            <SliderImage src={cake2} alt="cake2"></SliderImage>
           </Carousel>
         </Container>
       </Wrapper>

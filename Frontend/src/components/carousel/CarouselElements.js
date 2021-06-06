@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   background-color: white;
   background-position: top;
   background-repeat: no-repeat;
+  padding-top: 2rem;
 `;
 
 export const Container = styled.div`
@@ -23,10 +24,9 @@ export const Drip = styled.img`
 
 export const SliderImage = styled.img`
   @media(max-width: 768px) {
-    max-width: 200px;
-    border-radius: 20%;
+    height: 19rem;
   }
-  max-width: 400px;
+  height: 37rem;
 `;
 
 export const SliderButton = styled.img`

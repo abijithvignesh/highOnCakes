@@ -3,36 +3,43 @@ import orderbg from "../../images/orderbg.png";
 import formbg from "../../images/formbg.svg";
 
 export const Wrapper = styled.section`
-  min-height: 100vh;
   background-image: url(${orderbg});
   background-size: contain;
 `;
 
 export const Container = styled.div`
-  margin: 2em 2em;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 `;
 export const Formbox = styled.div`
-  background-image: url(${formbg});
-  background-size: contain;
-  height: 623px;
-  width: 320px;
-  margin-top: 4rem;
+  background-color: #F36583;
+  border-radius: 30px;
+  opacity: 0.8;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @media(min-width: 768px) {
+    padding-right: 1rem;
+  }
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 `;
 export const Title = styled.p`
   color: white;
-  margin-top: ${(props) => (props.secondary ? "1rem" : "2rem")};
-  margin-bottom: ${(props) => (props.secondary ? "1rem" : "2rem")};
   font-size: ${(props) => (props.secondary ? "10px" : "20px")};
 `;
 export const Row = styled.div`
   display: flex;
+  @media(min-width: 768px) {
+    flex-direction: row;
+  }
   flex-direction: column;
+  width: 100%;
 `;
 
 export const Input = styled.input`
@@ -40,9 +47,14 @@ export const Input = styled.input`
   padding: 5px 20px;
   border: none;
   color: white;
-  margin-top: 1em;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  width: 100%;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.35);
+  @media(min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -50,10 +62,15 @@ export const TextArea = styled.textarea`
   padding: 5px 20px;
   border: none;
   color: white;
-  margin-top: 1em;
+  width: 100%;
+  margin-top: 1rem;
+  margin-right: 1rem;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.35);
   height: 100px;
+  @media(min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const Button = styled.button`
@@ -70,7 +87,5 @@ export const Button = styled.button`
        font-size: 12px;
        `
    }}
- // padding: .5em 1em;
   border: none;
-  margin-top: ${props=>props.small? "0":"1rem"};
 `;

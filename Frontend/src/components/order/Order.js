@@ -9,14 +9,16 @@ import {
   TextArea,
   Button,
 } from "./OrderElement";
-
+import './order.css';
 export default function Order() {
   return (
     <>
       <Wrapper>
         <Container>
           <Formbox>
-            <Title>BOOK NOW</Title>
+            <Row>
+              <Title>BOOK NOW</Title>
+            </Row>
             <Row>
               <Input type="text" placeholder="Name" />
               <Input type="text" placeholder="Phone Number" />
@@ -29,9 +31,13 @@ export default function Order() {
               <TextArea placeholder="Specification" />
               <TextArea placeholder="Delivery Address" />
             </Row>
-            <Title secondary>Upload a reference image</Title>
-            <Button small>Choose File</Button>
-            <Button >Order Now</Button>
+            <Row className="align-items-center">
+              <Title className="upload-image-text" secondary>Upload a reference image</Title>
+            </Row>
+            <Row className="button-row align-items-center upload-image-text">
+              <Button small className="choosefile-button">Choose File</Button>
+              <Button className="ordernow-button">Order Now</Button>
+            </Row>
           </Formbox>
         </Container>
       </Wrapper>

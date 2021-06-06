@@ -14,7 +14,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
   }
-  padding: 6em 1em;
+  padding: 6em 3em;
 `;
 
 export const Drip = styled.img`
@@ -26,7 +26,7 @@ export const SliderImage = styled.img`
   @media(max-width: 768px) {
     height: 19rem;
   }
-  height: 37rem;
+  height: 29rem;
 `;
 
 export const SliderButton = styled.img`

@@ -2,6 +2,8 @@ import styled from "styled-components/macro";
 import aboutus from "../../images/aboutus.png";
 export const Wrapper = styled.section`
   position: relative;
+  display: flex;
+  flex-direction: column
 `;
 
 export const Banner = styled.div`
@@ -9,6 +11,14 @@ export const Banner = styled.div`
 `;
 
 export const CoverPhoto = styled.img`
+@media (max-width: 767px) {
+  height: 300px;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  object-fit: cover;
+  height: 450px;
+}
   width: 100%;
 `;
 
@@ -43,6 +53,7 @@ export const Aboutus = styled.p`
   color: #9F8189;
   font-size: 30px;
   font-weight: bold;
+  flex: 0.5;
   margin-top: 1rem;
   margin-left: 2rem;
   line-height: 2.5rem;
@@ -56,8 +67,9 @@ export const Content = styled.p`
   font-size: 20px;
   margin-top: 1rem;
   display: flex;
+  flex: 3;
   color: #9F8189;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   @media(min-width: 768px) {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;

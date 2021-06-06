@@ -16,9 +16,9 @@ export default function AboutUs() {
     <>
       <Wrapper>
         <CoverPhoto src={aboutus} alt="about us"></CoverPhoto>
-          <Aboutus>
-            ABOUT<br />
-          </Aboutus>
+        <Aboutus>
+          ABOUT<br />
+        </Aboutus>
         <Container>
           <Content className="">
             <span className="aboutcont">US</span>

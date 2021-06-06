@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
-
+import aboutus from "../../images/aboutus.png";
 export const Wrapper = styled.section`
-  height: 500px;
+  position: relative;
 `;
 
 export const Banner = styled.div`
@@ -13,19 +13,34 @@ export const CoverPhoto = styled.img`
 `;
 
 export const ProfilePhoto = styled.img`
-  position: absolute;
- // width: 115px;
-  width: 7rem;
-  top: 12rem;
-  right: .5rem;
+  width: 15rem;
+  height: 15rem;
+  @media (max-width: 768px) {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    z-index: 1;
+    top: -60%;
+    right: 1%
+  }
 `;
 
 export const Container = styled.div`
   position: relative;
+  display: flex;
+  margin: 0 2rem;
+  @media (min-width: 768px) {
+    div.profile-container{
+      display: flex;
+      justify-content: center;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+  }
 `;
 
 export const Aboutus = styled.p`
-  color: #9f8189;
+  color: #9F8189;
   font-size: 30px;
   font-weight: bold;
   margin-top: 1rem;
@@ -33,15 +48,33 @@ export const Aboutus = styled.p`
   line-height: 2.5rem;
   position: relative;
   span {
-    color: #f36583;
+    color: #F36583;
   }
 `;
 
 export const Content = styled.p`
-  font-size: 12px;
-  color: #9f8189;
-  position: absolute;
-  margin-left: 5rem;
-  top: 3rem;
-  line-height: 1rem;
+  font-size: 20px;
+  margin-top: 1rem;
+  display: flex;
+  color: #9F8189;
+  line-height: 1.3rem;
+  @media(min-width: 768px) {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    span.aboutcont {
+      margin-right: 1rem;
+    }
+  }
+  @media(max-width: 768px) {
+    span.content {
+      font-size: 15px;
+    }
+    span.aboutcont {
+      margin-right: 0.5rem;
+    }
+  }
+  span.aboutcont {
+    font-size: 30px;
+    color: #F36583;
+  }
 `;

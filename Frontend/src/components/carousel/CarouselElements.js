@@ -13,8 +13,9 @@ export const Container = styled.div`
   @media(min-width: 768px)  {
     display: flex;
     justify-content: center;
+    padding: 6em 3em;
   }
-  padding: 6em 3em;
+  padding: 6em 1em;
 `;
 
 export const Drip = styled.img`

@@ -1,15 +1,19 @@
 import styled from "styled-components/macro";
-import left from "../../images/left.svg"
-
+import drip from "../../images/drip.svg";
 export const Wrapper = styled.div`
+  background: url(${drip});
   background-color: white;
-  height: calc(65vh);
+  background-position: top;
+  background-repeat: no-repeat;
 `;
 
 export const Container = styled.div`
-  margin: 1em 1em;
   position: relative;
-  top: 70px;
+  @media(min-width: 768px)  {
+    display: flex;
+    justify-content: center;
+  }
+  padding: 6em 1em;
 `;
 
 export const Drip = styled.img`
@@ -18,10 +22,20 @@ export const Drip = styled.img`
 `;
 
 export const SliderImage = styled.img`
-  width: 100%;
+  @media(max-width: 768px) {
+    max-width: 200px;
+    border-radius: 20%;
+  }
+  border-radius: 50%;
+  max-width: 400px;
 `;
 
 export const SliderButton = styled.img`
   height: 30px;
- margin-top: 10rem;
+`;
+
+export const SliderButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
 `;

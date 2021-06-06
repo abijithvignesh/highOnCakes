@@ -79,14 +79,19 @@ export const Contact = styled.div`
   font-size: 20px;
   @media (min-width: 768px) {
     font-size: 20px;
+    img {
+      width: 30px;
+      height: 24px;
+    }
   }
   @media (max-width: 767px) {
     font-size: 10px;
+    img {
+      width: 22px;
+      height: 15px;
+    }
   }
   justify-content: center;
-  img {
-    height: 15px;
-  }
   p {
     margin-left: 0.5rem;
   }
@@ -95,7 +100,7 @@ export const Contact = styled.div`
 export const Phone = styled.div`
   display: flex;
   color: white;
-  align-self: center;
+  align-items: center;
   @media (min-width: 768px) {
     margin-right: 2rem;
   }
@@ -108,7 +113,7 @@ export const Phone = styled.div`
 export const Email = styled.div`
   display: flex;
   color: white;
-  align-self: center;
+  align-items: center;
   @media (min-width: 768px) {
     margin-right: 2rem;
   }
@@ -121,8 +126,8 @@ export const Email = styled.div`
 export const Location = styled.div`
   display: flex;
   color: white;
-  align-self: center;
   font-weight: bold;
+  align-items: center;
 `;
 
 export const Line = styled.hr`

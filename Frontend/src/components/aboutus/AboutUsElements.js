@@ -3,7 +3,8 @@ import aboutus from "../../images/aboutus.png";
 export const Wrapper = styled.section`
   position: relative;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  padding-bottom: 1rem;
 `;
 
 export const Banner = styled.div`

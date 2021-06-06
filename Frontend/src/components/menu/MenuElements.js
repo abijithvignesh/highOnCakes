@@ -9,13 +9,13 @@ export const Container = styled.div`
 `;
 export const Title = styled.h1`
   align-self: center;
-  margin-top: 15%;
   color: #9f8189;
+  padding: 20px;
   font-size: 27px;
 `;
 
 export const MenuTitle = styled.div`
-  margin: 2rem 2rem;
+  margin: 1rem 1rem;
   display: flex;
   justify-content: center;
 `;
@@ -28,6 +28,10 @@ export const Bottom = styled.div`
 `;
 
 export const Menuimage = styled.img`
+  @media(min-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
   width: 58px;
   height: 58px;
 `;
@@ -37,16 +41,19 @@ export const Cakes = styled.div``;
 export const Tidbits = styled.div``;
 
 export const MenuItems = styled.div`
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  @media(min-width: 768px) {
+    justify-content: space-evenly;
+  }
+  justify-content: center;
 `;
 
 export const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  padding: 1rem;
 `;
 
 export const Text = styled.p`

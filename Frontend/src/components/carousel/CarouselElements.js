@@ -26,7 +26,6 @@ export const SliderImage = styled.img`
     max-width: 200px;
     border-radius: 20%;
   }
-  border-radius: 50%;
   max-width: 400px;
 `;
 

@@ -5,7 +5,6 @@ export const Wrapper = styled.section``;
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
- 
 `;
 export const Title = styled.h1`
   align-self: center;
@@ -45,15 +44,20 @@ export const MenuItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   @media(min-width: 768px) {
-    justify-content: space-evenly;
+    padding: 0 4rem;
   }
-  justify-content: center;
 `;
 
 export const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  @media(min-width: 768px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
 `;
 
 export const Text = styled.p`

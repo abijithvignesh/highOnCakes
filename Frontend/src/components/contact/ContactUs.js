@@ -25,6 +25,12 @@ import location from "../../images/location.png";
 import footer from "../../images/footer.svg";
 
 export default function ContactUs() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
   return (
     <>
       <Wrapper>
@@ -52,7 +58,7 @@ export default function ContactUs() {
             </Location>
           </Contact>
           <Footer>
-            <Circle>
+            <Circle onClick={() => scrollToTop()}>
               <p>TOP</p>
             </Circle>
             <Line></Line>

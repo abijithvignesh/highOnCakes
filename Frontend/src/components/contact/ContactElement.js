@@ -1,19 +1,24 @@
 import styled from "styled-components/macro";
 
 export const Wrapper = styled.section`
-  height: 40vh;
   background-color: #f36583;
+  padding: 2rem 2rem;
 `;
 
 export const Container = styled.div`
-  margin: 2rem 2rem;
   display: flex;
   flex-direction: column;
 `;
 
 export const Logo = styled.img`
-  width: 43px;
-  margin-top: 3rem;
+  @media(max-width: 767px) {
+    width: 43px;
+    height: 42px
+  }
+  @media (min-width: 768px) {
+    width: 87px;
+    height: 86px
+  }
 `;
 
 export const Logodiv = styled.div`
@@ -24,32 +29,61 @@ export const Logodiv = styled.div`
 
 export const Title = styled.p`
   color: #fcede6;
-  font-size: 20px;
+  font-size: 50px;
   display: flex;
+  @media(max-width: 767px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
   justify-content: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
   font-weight: bold;
 `;
 
 export const Social = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
 `;
 
 export const Instagram = styled.img`
-  width: 26px;
+  object-fit: none;
+  @media(max-width: 767px) {
+    width: 26px;
+    height: 26px
+  }
+  @media (min-width: 768px) {
+    width: 79px;
+    height: 79px
+  }
 `;
 
 export const Facebook = styled.img`
-  width: 26px;
   margin-left: 1rem;
+  object-fit: none;
+  @media(max-width: 767px) {
+    width: 26px;
+    height: 26px;
+  }
+  @media (min-width: 768px) {
+    width: 79px;
+    height: 79px;
+  }
 `;
 
 export const Contact = styled.div`
   display: flex;
-  margin-top: 1rem;
-  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: 20px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
+  justify-content: center;
   img {
     height: 15px;
   }
@@ -60,26 +94,39 @@ export const Contact = styled.div`
 
 export const Phone = styled.div`
   display: flex;
-  font-size: 10px;
+  color: white;
   align-self: center;
+  @media (min-width: 768px) {
+    margin-right: 2rem;
+  }
+  @media (max-width: 767px) {
+    margin-right: 1rem;
+  }
+  font-weight: bold;
 `;
 
 export const Email = styled.div`
   display: flex;
-  font-size: 10px;
+  color: white;
   align-self: center;
+  @media (min-width: 768px) {
+    margin-right: 2rem;
+  }
+  @media (max-width: 767px) {
+    margin-right: 1rem;
+  }
+  font-weight: bold;
 `;
 
 export const Location = styled.div`
   display: flex;
-  font-size: 10px;
+  color: white;
   align-self: center;
+  font-weight: bold;
 `;
 
 export const Line = styled.hr`
   width: 100%;
-  margin-top: 2rem;
-  position: absolute;
   color: #fcede6;
 `;
 
@@ -90,8 +137,9 @@ export const Circle = styled.div`
   position: absolute;
   height: 30px;
   width: 30px;
-  top: 1.1rem; 
+  top: 30%; 
   z-index: 999;
+  cursor: pointer;
   p {
     font-size: 10px;
     color: #fcede6;
@@ -103,6 +151,11 @@ export const Circle = styled.div`
 
 export const Footer = styled.div`
   position: relative;
+  padding: 2rem;
+  margin-top: 2rem;
+  @media (max-width: 767px) {
+    margin-top: 1rem;
+  }
   width: 100%;
   display: flex;
   justify-content: center;

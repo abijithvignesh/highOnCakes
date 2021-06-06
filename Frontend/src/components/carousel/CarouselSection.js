@@ -11,6 +11,7 @@ import './CarouselStyles.css';
 import drip from "../../images/drip.svg";
 import cake1 from "../../images/cake1.png";
 import cake2 from "../../images/cake2.png";
+//import { FaBeer } from 'react-icons/fa';
 import "../../App.css";
 import left from "../../images/left.svg"
 import right from "../../images/right.svg"

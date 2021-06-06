@@ -4,6 +4,16 @@ export const Wrapper = styled.div`
   background-color: #fcede6;
   height: 3.5rem;
   box-shadow: 0 4px 8px -3px #00000029;
+
+  ${(props) => {
+    if (props.offsetY > 500)
+      return `
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      
+       `;
+  }}
 `;
 
 export const Nav = styled.nav`
@@ -11,12 +21,19 @@ export const Nav = styled.nav`
   display: flex;
   font-family: "Poppins", sans-serif;
   justify-content: space-between;
+  align-items: flex-end;
+  ${(props) => {
+    if (props.offsetY > 500)
+      return `
+      align-items: flex-end;
+       `;
+  }}
 `;
 
 export const LeftNav = styled.div`
-   @media (min-width: 1024px) {
-      margin-left: 4rem;
-    }
+  @media (min-width: 1024px) {
+    margin-left: 4rem;
+  }
   a {
     text-decoration: none;
     font-weight: 600;
@@ -32,8 +49,8 @@ export const LeftNav = styled.div`
 export const RightNav = styled.div`
   display: flex;
   @media (min-width: 1024px) {
-      margin-right: 4rem;
-    }
+    margin-right: 4rem;
+  }
   img {
     @media (min-width: 768px) {
       display: none;
@@ -53,9 +70,8 @@ export const RightNav = styled.div`
     list-style-type: none;
     margin: 0;
     padding: 0;
-   
+
     font-weight: 500;
-   
   }
   li {
     display: inline;
@@ -64,8 +80,8 @@ export const RightNav = styled.div`
       padding: 8px;
       color: #f36583;
       cursor: pointer;
-      :hover{
-        color:#9F8189;
+      :hover {
+        color: #9f8189;
       }
     }
   }
@@ -94,7 +110,7 @@ export const Navtoggle = styled.div`
 
     :hover {
       font-size: 30px;
-      transition:  height .2s, transform .2s;
+      transition: height 0.2s, transform 0.2s;
     }
   }
   ${(props) => {

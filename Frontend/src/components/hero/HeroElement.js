@@ -1,8 +1,9 @@
 import styled from "styled-components/macro";
+import { motion } from "framer-motion"
 
 export const Section = styled.section`
   @media (min-width: 768px) {
-   /* height: 80vh; */
+   /* height: 100vh; */
   }
 `;
 
@@ -36,7 +37,7 @@ export const Logo = styled.div`
   position: relative;
 `;
 
-export const Title1 = styled.h1`
+export const Title1 = styled(motion.h1)`
   color: #9f8189;
   font-size: 30px;
   text-align: center;
@@ -83,7 +84,7 @@ export const ButtonGroup = styled.div`
     justify-content: left;
   }
 `;
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   width: 147px;
   border-radius: 100px;
   background-color: ${(props) => (props.primary ? "#f36583" : "#FCEDE6")};
@@ -109,6 +110,7 @@ export const Balloon = styled.img`
   position: absolute;
   left: 2rem;
   z-index: 999;
+  transform: ${(props) => (props.offsetY && `translateY(${props.offsetY * -0.3}px)`)};
 `;
 
 export const Cloud1 = styled.img`
@@ -117,6 +119,7 @@ export const Cloud1 = styled.img`
   position: absolute;
   top: 3rem;
   left: 3rem;
+  transform: ${(props) => (props.offsetY && `translateY(${props.offsetY * 0.2}px)`)};
 `;
 
 export const Cloud2 = styled.img`
@@ -125,6 +128,7 @@ export const Cloud2 = styled.img`
   position: absolute;
   left: 12rem;
   top: 4rem;
+  transform: ${(props) => (props.offsetY && `translateY(${props.offsetY * 0.3}px)`)};
 `;
 
 export const Cloud3 = styled.img`
@@ -132,6 +136,7 @@ export const Cloud3 = styled.img`
   height: 42px;
   position: absolute;
   top: 6rem;
+  transform: ${(props) => (props.offsetY && `translateY(${props.offsetY * 0.1}px)`)};
 `;
 
 export const Logoring = styled.img`

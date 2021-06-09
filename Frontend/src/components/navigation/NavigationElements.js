@@ -130,6 +130,7 @@ export const Navtoggle = styled.div`
     else
       return `
       display: none;
+      
        `;
   }}
 `;

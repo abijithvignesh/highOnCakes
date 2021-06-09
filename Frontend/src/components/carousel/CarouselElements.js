@@ -28,6 +28,7 @@ export const SliderImage = styled.img`
     height: 19rem;
   }
   height: 29rem;
+  width: 25rem;
 `;
 
 export const SliderButton = styled.img`

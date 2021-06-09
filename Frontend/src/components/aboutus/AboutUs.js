@@ -20,7 +20,7 @@ export default function AboutUs() {
           ABOUT<br />
         </Aboutus>
         <Container>
-          <Content className="">
+          <Content >
             <span className="aboutcont">US</span>
             <span className="content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui
@@ -29,10 +29,26 @@ export default function AboutUs() {
               <br />
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </span>
+            
           </Content>
           <div className="profile-container">
             <ProfilePhoto src={profilepic} alt="profile pic"></ProfilePhoto>
           </div>
+         
+        </Container>
+        <Container>
+          <Content >
+            <span className="aboutcont">US</span>
+            <span className="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui
+              leo, lobortis et
+              <br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </span>
+            
+          </Content>
+         
         </Container>
       </Wrapper>
     </>

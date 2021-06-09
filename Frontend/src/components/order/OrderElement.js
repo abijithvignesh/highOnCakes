@@ -5,6 +5,9 @@ import formbg from "../../images/formbg.svg";
 export const Wrapper = styled.section`
   background-image: url(${orderbg});
   background-size: contain;
+  @media(min-width: 992px) {
+  height: 100vh;
+  }
 `;
 
 export const Container = styled.div`
@@ -28,6 +31,13 @@ export const Formbox = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media(min-width: 992px) {
+    height: 400px;
+    width: 600px;
+    margin-top: 10rem;
+  }
+
 `;
 export const Title = styled.p`
   color: white;
@@ -37,6 +47,9 @@ export const Row = styled.div`
   display: flex;
   @media(min-width: 768px) {
     flex-direction: row;
+  }
+  @media(min-width: 992px) {
+   margin-bottom: .5rem;
   }
   flex-direction: column;
   width: 100%;

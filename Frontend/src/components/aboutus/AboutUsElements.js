@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
+  
 `;
 
 export const Banner = styled.div`
@@ -14,11 +15,12 @@ export const Banner = styled.div`
 export const CoverPhoto = styled.img`
 @media (max-width: 767px) {
   height: 300px;
-  object-fit: contain;
+  /* object-fit: contain; */
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   object-fit: cover;
-  height: 450px;
+  height: 300px;
 }
   width: 100%;
 `;

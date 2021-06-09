@@ -11,13 +11,13 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     width: 43px;
-    height: 42px
+    height: 42px;
   }
   @media (min-width: 768px) {
     width: 87px;
-    height: 86px
+    height: 86px;
   }
 `;
 
@@ -31,11 +31,11 @@ export const Title = styled.p`
   color: #fcede6;
   font-size: 50px;
   display: flex;
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     font-size: 20px;
   }
   @media (min-width: 768px) {
-    font-size: 50px;
+    font-size: 20px;
   }
   justify-content: center;
   padding-top: 1rem;
@@ -49,28 +49,16 @@ export const Social = styled.div`
 `;
 
 export const Instagram = styled.img`
-  object-fit: none;
-  @media(max-width: 767px) {
-    width: 26px;
-    height: 26px
-  }
-  @media (min-width: 768px) {
-    width: 79px;
-    height: 79px
-  }
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 export const Facebook = styled.img`
   margin-left: 1rem;
   object-fit: none;
-  @media(max-width: 767px) {
-    width: 26px;
-    height: 26px;
-  }
-  @media (min-width: 768px) {
-    width: 79px;
-    height: 79px;
-  }
+  width: 2.5rem;
+  height: 2.5rem;
+  
 `;
 
 export const Contact = styled.div`
@@ -103,6 +91,9 @@ export const Phone = styled.div`
   align-items: center;
   @media (min-width: 768px) {
     margin-right: 2rem;
+    p {
+      font-size: 15px;
+    }
   }
   @media (max-width: 767px) {
     margin-right: 1rem;
@@ -116,6 +107,9 @@ export const Email = styled.div`
   align-items: center;
   @media (min-width: 768px) {
     margin-right: 2rem;
+    p {
+      font-size: 15px;
+    }
   }
   @media (max-width: 767px) {
     margin-right: 1rem;
@@ -128,6 +122,9 @@ export const Location = styled.div`
   color: white;
   font-weight: bold;
   align-items: center;
+  p {
+    font-size: 15px;
+  }
 `;
 
 export const Line = styled.hr`
@@ -142,8 +139,9 @@ export const Circle = styled.div`
   position: absolute;
   height: 30px;
   width: 30px;
-  top: 30%; 
+  top: 30%;
   z-index: 999;
+  
   cursor: pointer;
   p {
     font-size: 10px;

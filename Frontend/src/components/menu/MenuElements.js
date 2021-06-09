@@ -1,6 +1,11 @@
 import styled from "styled-components/macro";
 
-export const Wrapper = styled.section``;
+export const Wrapper = styled.section`
+ @media(min-width: 992px) {
+  height: 100vh;
+  }
+
+`;
 
 export const Container = styled.div`
   display: flex;

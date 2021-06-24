@@ -1,4 +1,4 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import {
   Container,
   Wrapper,
@@ -10,10 +10,10 @@ import {
   Button,
 } from "./OrderElement";
 import './order.css';
-export default function Order() {
+const Order = forwardRef((props, ref) => {
   return (
     <>
-      <Wrapper>
+      <Wrapper ref={ref}>
         <Container>
           <Formbox>
             <Row>
@@ -44,3 +44,5 @@ export default function Order() {
     </>
   );
 }
+)
+export default Order;

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import {
   Wrapper,
   Container,
@@ -24,16 +24,16 @@ import email from "../../images/email.png";
 import location from "../../images/location.png";
 import footer from "../../images/footer.svg";
 
-export default function ContactUs() {
+const ContactUs = forwardRef((props, ref) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
   return (
     <>
-      <Wrapper>
+      <Wrapper ref={ref}>
         <Container>
           <Logodiv>
             <Logo src={bottomlogo} alt="bottomlogo"></Logo>
@@ -68,3 +68,5 @@ export default function ContactUs() {
     </>
   );
 }
+)
+export default ContactUs;

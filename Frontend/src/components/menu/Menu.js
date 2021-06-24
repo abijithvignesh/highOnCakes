@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React, forwardRef,useState} from "react";
 import {
   Wrapper,
   Title,
@@ -21,15 +21,15 @@ import pinata from "../../images/pinata.png"
 import tsunami from "../../images/tsunami.png"
 import fondant from "../../images/fondant.png"
 
-export default function Menu() {
+const Menu = forwardRef((props, ref) => {
   const [showingMenu, setShowingMenu] = useState('cakes');
 
   const toggleMenu = (menuType) => setShowingMenu(menuType);
   return (
     <>
-      <Wrapper>
+      <Wrapper >
         <Container>
-          <Title>Menu</Title>
+          <Title ref={ref}>Menu</Title>
           <MenuTitle>
             <Cakes>
               <Top>
@@ -127,3 +127,5 @@ export default function Menu() {
     </>
   );
 }
+)
+export default Menu;

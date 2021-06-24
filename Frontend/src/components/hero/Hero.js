@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef,useEffect, useState } from "react";
 import {
   Section,
   Container,
@@ -20,8 +20,9 @@ import logoring from "../../images/logoring.svg";
 import cloud1 from "../../images/cloud1.png";
 import cloud2 from "../../images/cloud2.png";
 import cloud3 from "../../images/cloud3.png";
+import Navigation from "../navigation/Navigation"
 
-export default function Hero() {
+const Hero = forwardRef(({updateMenu}, ref) => {
   const [offsetY, setOffSetY] = useState(0);
 
   const handleScroll = () => setOffSetY(window.pageYOffset);
@@ -39,7 +40,9 @@ export default function Hero() {
 
   return (
     <>
-      <Section>
+      
+      <Section ref={ref}>
+     
         <Container>
           <LeftContainer>
             <Title1
@@ -56,10 +59,10 @@ export default function Hero() {
               Cakes for every occassion from <br /> High On Cakes
             </Title2>
             <ButtonGroup>
-              <Button whileHover={{ scale: 1.05 }} whileTap={{scale:0.95}} primary>
+              <Button onClick={(val)=>updateMenu(3)} whileHover={{ scale: 1.05 }} whileTap={{scale:0.95}} primary>
                 Order Now
               </Button>
-              <Button whileHover={{ scale: 1.05 }} whileTap={{scale:0.95}}>Know More</Button>
+              <Button onClick={(val)=>updateMenu(4)} whileHover={{ scale: 1.05 }} whileTap={{scale:0.95}}>Know More</Button>
             </ButtonGroup>
           </LeftContainer>
           <RightContainer>
@@ -76,3 +79,6 @@ export default function Hero() {
     </>
   );
 }
+)
+
+export default Hero;

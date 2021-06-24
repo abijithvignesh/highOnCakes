@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   background-color: #fcede6;
   height: 3.5rem;
   box-shadow: 0 4px 8px -3px #00000029;
-
+  
   ${(props) => {
     if (props.offsetY > 500)
       return `

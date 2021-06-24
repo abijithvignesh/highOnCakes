@@ -1,4 +1,4 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import aboutus from "../../images/aboutus.png";
 import {
   Wrapper,
@@ -11,10 +11,10 @@ import {
 } from "./AboutUsElements";
 import profilepic from "../../images/profilepic.png";
 
-export default function AboutUs() {
+const AboutUs = forwardRef((props, ref) => {
   return (
     <>
-      <Wrapper>
+      <Wrapper ref={ref}>
         <CoverPhoto src={aboutus} alt="about us"></CoverPhoto>
         <Aboutus>
           ABOUT<br />
@@ -54,3 +54,5 @@ export default function AboutUs() {
     </>
   );
 }
+)
+export default AboutUs;

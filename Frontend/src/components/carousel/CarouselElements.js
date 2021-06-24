@@ -1,16 +1,17 @@
 import styled from "styled-components/macro";
 import drip from "../../images/drip.svg";
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   background: url(${drip});
   background-color: white;
   background-position: top;
   background-repeat: no-repeat;
   padding-top: 2rem;
+  height: 100vh;
 `;
 
 export const Container = styled.div`
   position: relative;
-  @media(min-width: 768px)  {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     padding: 6em 3em;
@@ -24,7 +25,7 @@ export const Drip = styled.img`
 `;
 
 export const SliderImage = styled.img`
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     height: 19rem;
   }
   height: 29rem;

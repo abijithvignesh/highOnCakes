@@ -3,6 +3,8 @@ import styled from "styled-components/macro";
 export const Wrapper = styled.section`
   background-color: #f36583;
   padding: 2rem 2rem;
+ // height:30vh;
+  
 `;
 
 export const Container = styled.div`

@@ -5,6 +5,8 @@ import formbg from "../../images/formbg.svg";
 export const Wrapper = styled.section`
   background-image: url(${orderbg});
   background-size: contain;
+  height: 100vh;
+  
   @media(min-width: 992px) {
   height: 100vh;
   }

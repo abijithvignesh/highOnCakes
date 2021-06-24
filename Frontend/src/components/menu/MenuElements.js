@@ -4,7 +4,8 @@ export const Wrapper = styled.section`
  @media(min-width: 992px) {
   height: 100vh;
   }
-
+ 
+  height: 100vh;
 `;
 
 export const Container = styled.div`

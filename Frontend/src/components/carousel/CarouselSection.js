@@ -5,9 +5,9 @@ import {
   Container,
   SliderImage,
   SliderButton,
-  SliderButtonContainer
+  SliderButtonContainer,
 } from "./CarouselElements";
-import './CarouselStyles.css';
+import "./CarouselStyles.css";
 import drip from "../../images/drip.svg";
 import cake1 from "../../images/cake1.png";
 import cake2 from "../../images/cake2.png";
@@ -22,26 +22,27 @@ import eight from "../../images/gallery/8.JPG";
 import nine from "../../images/gallery/9.JPG";
 import ten from "../../images/gallery/10.jpg";
 import "../../App.css";
-import left from "../../images/left.svg"
-import right from "../../images/right.svg"
+import left from "../../images/left.svg";
+import right from "../../images/right.svg";
 
-export default function CarouselSection() {
-
-
+export default function CarouselSection(props, ref) {
   function myArrow({ type, onClick, isEdge }) {
-    const pointer = type === consts.PREV ? left: right;
+    const pointer = type === consts.PREV ? left : right;
     return (
       <SliderButtonContainer>
-        <SliderButton onClick={onClick} disabled={isEdge} src={pointer}/>
+        <SliderButton onClick={onClick} disabled={isEdge} src={pointer} />
       </SliderButtonContainer>
     );
   }
 
   return (
     <>
-      <Wrapper>
+      <Wrapper >
         <Container>
-          <Carousel itemsToShow={window.innerWidth > 768 ? 2 : 1} renderArrow={myArrow}>
+          <Carousel
+            itemsToShow={window.innerWidth > 768 ? 2 : 1}
+            renderArrow={myArrow}
+          >
             <SliderImage src={one} alt="cake1"></SliderImage>
             <SliderImage src={two} alt="cake2"></SliderImage>
             <SliderImage src={three} alt="three"></SliderImage>
@@ -58,3 +59,6 @@ export default function CarouselSection() {
     </>
   );
 }
+
+
+

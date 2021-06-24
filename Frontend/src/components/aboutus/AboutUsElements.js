@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
+  /* height: 100vh; */
   
 `;
 
@@ -20,7 +21,7 @@ export const CoverPhoto = styled.img`
 }
 @media (min-width: 768px) {
   object-fit: cover;
-  height: 300px;
+  height: 350px;
 }
   width: 100%;
 `;

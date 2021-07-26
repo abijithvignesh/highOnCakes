@@ -26,6 +26,9 @@ export const Nav = styled.nav`
     if (props.offsetY > 500)
       return `
       align-items: flex-end;
+      @media only screen and (max-width: 600px) {
+        padding: 1rem 0rem 1rem 0rem;
+      }
        `;
   }}
 `;

@@ -114,7 +114,7 @@ export const Balloon = styled.img`
   transform: ${(props) =>
     props.offsetY && `translateY(${props.offsetY * -0.5}px)`};
 
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     height: 500px;
     width: 300px;
     left: 2.7rem;
@@ -130,7 +130,7 @@ export const Cloud1 = styled.img`
   transform: ${(props) =>
     props.offsetY && `translateY(${props.offsetY * 0.2}px)`};
 
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     width: 70px;
     height: 40px;
     top:4rem;
@@ -147,7 +147,7 @@ export const Cloud2 = styled.img`
   transform: ${(props) =>
     props.offsetY && `translateY(${props.offsetY * 0.3}px)`};
 
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     width: 160px;
     height: 100px;
     left: 17rem;
@@ -163,7 +163,7 @@ export const Cloud3 = styled.img`
   transform: ${(props) =>
     props.offsetY && `translateY(${props.offsetY * 0.1}px)`};
 
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     width: 100px;
     height: 60px;
     top: 8rem;
@@ -173,7 +173,7 @@ export const Cloud3 = styled.img`
 export const Logoring = styled.img`
   width: 304px;
   margin-top: 1.5rem;
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     width: 410px;
     margin-top: 2.5rem;
   }

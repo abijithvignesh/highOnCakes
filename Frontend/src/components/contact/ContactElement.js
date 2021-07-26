@@ -53,6 +53,7 @@ export const Social = styled.div`
 export const Instagram = styled.img`
   width: 2.5rem;
   height: 2.5rem;
+  
 `;
 
 export const Facebook = styled.img`
@@ -75,10 +76,10 @@ export const Contact = styled.div`
     }
   }
   @media (max-width: 767px) {
-    font-size: 10px;
+    font-size: 8px;
     img {
-      width: 22px;
-      height: 15px;
+      width: 16px;
+      height: 12px;
     }
   }
   justify-content: center;

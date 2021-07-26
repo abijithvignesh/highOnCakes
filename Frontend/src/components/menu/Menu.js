@@ -28,8 +28,8 @@ const Menu = forwardRef((props, ref) => {
   return (
     <>
       <Wrapper >
-        <Container>
-          <Title ref={ref}>Menu</Title>
+        <Container  ref={ref}>
+          <Title>Menu</Title>
           <MenuTitle>
             <Cakes>
               <Top>

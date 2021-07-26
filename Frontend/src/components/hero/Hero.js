@@ -32,7 +32,7 @@ const Hero = forwardRef(({updateMenu}, ref) => {
     cloud1.style.transform = `translateY(${window.pageYOffset * 0.2}px)`;
     cloud2.style.transform = `translateY(${window.pageYOffset * 0.3}px)`;
     cloud3.style.transform = `translateY(${window.pageYOffset * 0.1}px)`;
-    setOffSetY(window.pageYOffset);
+    //setOffSetY(window.pageYOffset);
   };
 
   const variants = {
@@ -75,10 +75,10 @@ const Hero = forwardRef(({updateMenu}, ref) => {
           </LeftContainer>
           <RightContainer>
             <Logo>
-              <img src={logo} className="balloon" />
-              <img src={cloud1} className="cloud1" />
-              <img src={cloud2} className="cloud2" />
-              <img src={cloud3} className="cloud3" />
+              <Balloon src={logo} className="balloon" />
+              <Cloud1 src={cloud1} className="cloud1" />
+              <Cloud2 src={cloud2} className="cloud2" />
+              <Cloud3 src={cloud3} className="cloud3" />
               <Logoring src={logoring} alr="ring" />
             </Logo>
           </RightContainer>

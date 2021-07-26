@@ -1,4 +1,4 @@
-import React, { forwardRef,useEffect, useState } from "react";
+import React, { forwardRef,useEffect } from "react";
 import {
   Section,
   Container,
@@ -23,9 +23,17 @@ import cloud3 from "../../images/cloud3.png";
 import Navigation from "../navigation/Navigation"
 
 const Hero = forwardRef(({updateMenu}, ref) => {
-  const [offsetY, setOffSetY] = useState(0);
-
-  const handleScroll = () => setOffSetY(window.pageYOffset);
+  const handleScroll = () => {
+    const balloon = document.querySelector('.balloon');
+    const cloud1 = document.querySelector('.cloud1');
+    const cloud2 = document.querySelector('.cloud2');
+    const cloud3 = document.querySelector('.cloud3');
+    balloon.style.transform = `translateY(${window.pageYOffset * -0.5}px)`;
+    cloud1.style.transform = `translateY(${window.pageYOffset * 0.2}px)`;
+    cloud2.style.transform = `translateY(${window.pageYOffset * 0.3}px)`;
+    cloud3.style.transform = `translateY(${window.pageYOffset * 0.1}px)`;
+    //setOffSetY(window.pageYOffset);
+  };
 
   const variants = {
     hidden: { opacity: 0 },
@@ -67,11 +75,11 @@ const Hero = forwardRef(({updateMenu}, ref) => {
           </LeftContainer>
           <RightContainer>
             <Logo>
-              <Balloon offsetY={offsetY} src={logo} alt="logoimage" />
-              <Cloud1 offsetY={offsetY} src={cloud1} alt="cloud1" />
-              <Cloud2 offsetY={offsetY} src={cloud2} alt="cloud2" />
-              <Cloud3 offsetY={offsetY} src={cloud3} alt="cloud3" />
-              <Logoring offsetY={offsetY} src={logoring} alr="ring" />
+              <Balloon src={logo} className="balloon" />
+              <Cloud1 src={cloud1} className="cloud1" />
+              <Cloud2 src={cloud2} className="cloud2" />
+              <Cloud3 src={cloud3} className="cloud3" />
+              <Logoring src={logoring} alr="ring" />
             </Logo>
           </RightContainer>
         </Container>

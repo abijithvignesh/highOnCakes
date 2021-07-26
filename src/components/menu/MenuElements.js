@@ -11,6 +11,9 @@ export const Wrapper = styled.section`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  @media(min-width: 768px) {
+    padding: 10rem;
+  }
 `;
 export const Title = styled.h1`
   align-self: center;
